@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:id="@+id/show_magnitude"
+        tools:text="7.2"
+        android:gravity="center"
+        android:background="@drawable/magnitude_circle"/>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_place"
+            tools:text="San Franscisco"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:textColor="@color/textColorEarthquakeDetails"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_place_nearby"
+            tools:text="Near to San Franscisco"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:textColor="@color/textColorEarthquakeLocation"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_date"
+            tools:text="Feb 2, 2001"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textAlignment="viewEnd"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show_time"
+            tools:text="2:00 AM"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textAlignment="viewEnd"/>
+
+    </LinearLayout>
+
+</LinearLayout>
